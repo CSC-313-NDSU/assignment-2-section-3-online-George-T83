@@ -1,0 +1,71 @@
+/* GLOBAL STYLES */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 56px; /* Offsets the fixed navbar height so content isn't hidden */
+  background-color: #f8f9fa;
+}
+
+/* HERO SECTION STYLING */
+#home {
+  height: 100vh; /* Full Viewport Height */
+  /* Linear gradient overlays the image to make text readable */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://via.placeholder.com/1920x1080");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Creates a Parallax scrolling effect */
+  color: white;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border: 5px solid white;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* HOVER EFFECTS (Assignment Requirement) */
+.project-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Moves card up 10px on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* TABLE STYLING */
+.table th {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CAROUSEL STYLING */
+.carousel-inner {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2.5rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
