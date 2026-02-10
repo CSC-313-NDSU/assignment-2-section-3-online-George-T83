@@ -1,11 +1,11 @@
-/* GLOBAL STYLES */
+/* Global Body Styles */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 56px; /* Offsets the fixed navbar height so content isn't hidden */
   background-color: #f8f9fa;
 }
 
-/* HERO SECTION STYLING */
+/* Hero Section Styling with Parallax Effect */
 #home {
   height: 100vh; /* Full Viewport Height */
   /* Linear gradient overlays the image to make text readable */
@@ -14,7 +14,7 @@ body {
     url("https://via.placeholder.com/1920x1080");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Creates a Parallax scrolling effect */
+  background-attachment: fixed;
   color: white;
 }
 
@@ -26,7 +26,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-/* HOVER EFFECTS (Assignment Requirement) */
+/* Portfolio Card Hover Effects */
 .project-card {
   transition:
     transform 0.3s ease,
@@ -40,13 +40,13 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* TABLE STYLING */
+/* Table Styling */
 .table th {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* CAROUSEL STYLING */
+/* Carousel Styling */
 .carousel-inner {
   border-radius: 10px;
   overflow: hidden;
@@ -58,12 +58,11 @@ body {
   padding: 10px;
 }
 
-/* RESPONSIVENESS */
+/* Mobile Responsiveness Adjustments */
 @media (max-width: 768px) {
   #home h1 {
     font-size: 2.5rem;
   }
-
   .profile-img {
     width: 120px;
     height: 120px;
